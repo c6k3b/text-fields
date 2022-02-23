@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fxx-dS-6HD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TextFields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BH3-cs-AZ0" customClass="NoDigitsTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="108" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="xoL-5k-lVf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-BL-aT1" customClass="OnlyCharactersTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="276" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="qGl-cf-YdG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DWS-Po-QdY" customClass="LinkTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="360" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="OUQ-bs-IhC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dh-TY-1tU" customClass="ValidationRulesTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="444" width="382" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jFs-Xf-Ovp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHU-J0-r3a" customClass="InputLimitTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="192" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="JPJ-1g-1r8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BHU-J0-r3a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0oR-Qz-0wd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BHU-J0-r3a" secondAttribute="trailing" constant="16" id="2kV-Y6-NOu"/>
+                            <constraint firstItem="5Dh-TY-1tU" firstAttribute="top" secondItem="DWS-Po-QdY" secondAttribute="bottom" constant="20" id="4hJ-kH-Otp"/>
+                            <constraint firstItem="Tk2-BL-aT1" firstAttribute="top" secondItem="BHU-J0-r3a" secondAttribute="bottom" constant="20" id="6lc-rI-p71"/>
+                            <constraint firstItem="BHU-J0-r3a" firstAttribute="top" secondItem="BH3-cs-AZ0" secondAttribute="bottom" constant="20" id="E6g-jW-uYO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Dh-TY-1tU" secondAttribute="trailing" constant="16" id="KW0-P0-As3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BH3-cs-AZ0" secondAttribute="trailing" constant="16" id="ORQ-4P-oEY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DWS-Po-QdY" secondAttribute="trailing" constant="16" id="PFn-Vf-Y7l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tk2-BL-aT1" secondAttribute="trailing" constant="16" id="UNm-Fg-0tg"/>
+                            <constraint firstItem="BH3-cs-AZ0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Xiv-6s-y36"/>
+                            <constraint firstItem="DWS-Po-QdY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dc1-pg-AIU"/>
+                            <constraint firstItem="Tk2-BL-aT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eVQ-3s-bJo"/>
+                            <constraint firstItem="BH3-cs-AZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m1n-uQ-nLe"/>
+                            <constraint firstItem="5Dh-TY-1tU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xFr-P3-9ho"/>
+                            <constraint firstItem="DWS-Po-QdY" firstAttribute="top" secondItem="Tk2-BL-aT1" secondAttribute="bottom" constant="20" id="yN1-Gu-RG0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aD2-EB-Sdh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="o1K-gq-mCg">
+                            <imageReference key="image" image="tray.full.fill" catalog="system" renderingMode="original"/>
+                            <connections>
+                                <segue destination="SWW-Wf-Y6g" kind="show" id="zx7-8W-eCp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414.49275362318843" y="121.875"/>
+        </scene>
+        <!--No Digits-->
+        <scene sceneID="iNY-ei-Cwh">
+            <objects>
+                <viewController id="zrn-nK-7He" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aoX-fk-irM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gc-kF-WBo" customClass="NoDigitsTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="416" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Kbx-c2-flA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lcX-X4-eUV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lcX-X4-eUV" firstAttribute="trailing" secondItem="1gc-kF-WBo" secondAttribute="trailing" constant="16" id="4lq-Cp-iL8"/>
+                            <constraint firstItem="1gc-kF-WBo" firstAttribute="leading" secondItem="lcX-X4-eUV" secondAttribute="leading" constant="16" id="HM6-Nk-jwY"/>
+                            <constraint firstItem="1gc-kF-WBo" firstAttribute="centerY" secondItem="aoX-fk-irM" secondAttribute="centerY" id="Qdn-wb-EaX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="No Digits" id="rwN-3V-mzZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AN-6U-3uR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2915.9420289855075" y="-538.39285714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="goe-6X-uY1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fxx-dS-6HD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qeg-sU-aNJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a0V-b1-Oep"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0f-lL-e5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495.6521739130435" y="121.875"/>
+        </scene>
+        <!--Input limit-->
+        <scene sceneID="NNT-y7-0Il">
+            <objects>
+                <viewController id="qpb-fk-qed" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZ6-6P-MYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99t-KI-rcN" customClass="InputLimitTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="416" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="tf5-J9-AEp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="21H-Vm-3VO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="99t-KI-rcN" firstAttribute="centerY" secondItem="tZ6-6P-MYP" secondAttribute="centerY" id="676-ZD-aYQ"/>
+                            <constraint firstItem="99t-KI-rcN" firstAttribute="leading" secondItem="21H-Vm-3VO" secondAttribute="leading" constant="16" id="7Hf-Pk-NFg"/>
+                            <constraint firstItem="21H-Vm-3VO" firstAttribute="trailing" secondItem="99t-KI-rcN" secondAttribute="trailing" constant="16" id="Qhe-w8-uS5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Input limit" id="Sxn-Im-BpU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hp2-86-FPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3734.7826086956525" y="-202.23214285714286"/>
+        </scene>
+        <!--Validation rules-->
+        <scene sceneID="wUg-G7-xCY">
+            <objects>
+                <viewController id="GCV-nB-YQg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eya-tB-gJr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-Um-WuG" customClass="ValidationRulesTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="384" width="382" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Yrx-RQ-N3F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wu2-zq-2LD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W8s-Um-WuG" firstAttribute="centerY" secondItem="Eya-tB-gJr" secondAttribute="centerY" id="G2y-6E-tx8"/>
+                            <constraint firstItem="W8s-Um-WuG" firstAttribute="leading" secondItem="wu2-zq-2LD" secondAttribute="leading" constant="16" id="Vt0-PF-upI"/>
+                            <constraint firstItem="wu2-zq-2LD" firstAttribute="trailing" secondItem="W8s-Um-WuG" secondAttribute="trailing" constant="16" id="whm-XC-Ijq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Validation rules" id="x5o-6s-aAp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUL-OP-rje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2884.057971014493" y="897.99107142857133"/>
+        </scene>
+        <!--Link-->
+        <scene sceneID="wu0-EI-7eT">
+            <objects>
+                <viewController id="OKa-HK-ODr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5nH-Bl-FuD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzG-N1-PUP" customClass="LinkTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="416" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="NkB-cn-qeE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="61u-Ux-LGu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="61u-Ux-LGu" firstAttribute="trailing" secondItem="AzG-N1-PUP" secondAttribute="trailing" constant="16" id="VVO-Ta-POA"/>
+                            <constraint firstItem="AzG-N1-PUP" firstAttribute="centerY" secondItem="5nH-Bl-FuD" secondAttribute="centerY" id="e5F-sY-TkP"/>
+                            <constraint firstItem="AzG-N1-PUP" firstAttribute="leading" secondItem="61u-Ux-LGu" secondAttribute="leading" constant="16" id="qsw-9K-9mv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Link" id="Biy-Gs-iUx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ay-Jo-e1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3728.985507246377" y="692.41071428571422"/>
+        </scene>
+        <!--Only characters-->
+        <scene sceneID="wF9-va-iMz">
+            <objects>
+                <viewController id="psv-gn-yV7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Di-d2-N68">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-RT-ET5" customClass="OnlyCharactersTextFieldView" customModule="TextFields" customModuleProvider="target">
+                                <rect key="frame" x="16" y="416" width="382" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="0Pb-wZ-YyD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VHj-Jh-y1A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XXD-RT-ET5" firstAttribute="centerY" secondItem="1Di-d2-N68" secondAttribute="centerY" id="Ibo-XM-Cnx"/>
+                            <constraint firstItem="XXD-RT-ET5" firstAttribute="leading" secondItem="VHj-Jh-y1A" secondAttribute="leading" constant="16" id="Ppq-Wc-YZz"/>
+                            <constraint firstItem="VHj-Jh-y1A" firstAttribute="trailing" secondItem="XXD-RT-ET5" secondAttribute="trailing" constant="16" id="mXd-NA-6af"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Only characters" id="ech-iW-r4Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wey-i8-pqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4484.057971014493" y="268.52678571428572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="b9X-lW-gQ1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="SWW-Wf-Y6g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sWR-P9-1TW"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CH8-3S-P91">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zrn-nK-7He" kind="relationship" relationship="viewControllers" id="4PM-pB-afS"/>
+                        <segue destination="qpb-fk-qed" kind="relationship" relationship="viewControllers" id="iJ8-p2-eTD"/>
+                        <segue destination="psv-gn-yV7" kind="relationship" relationship="viewControllers" id="VR7-8Y-mML"/>
+                        <segue destination="OKa-HK-ODr" kind="relationship" relationship="viewControllers" id="V12-Vw-IVy"/>
+                        <segue destination="GCV-nB-YQg" kind="relationship" relationship="viewControllers" id="4v2-d6-35h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqt-G5-D09" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tray.full.fill" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
